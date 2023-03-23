@@ -9,7 +9,7 @@ const SIZE = 1e+9;
 // Durée d'execution du programme : ~4min 26sec
 (async () => {
 	console.time('writeMany');
-	const filehandle = await fs.open(__dirname + '/../read-big/src.txt', 'w')
+	const filehandle = await fs.open(__dirname + '/../read-big/src-SMALL.txt', 'w')
 	const stream = filehandle.createWriteStream();
 
   console.log(stream.writableHighWaterMark)
